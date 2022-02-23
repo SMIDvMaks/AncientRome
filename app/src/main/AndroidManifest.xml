@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atnncei.reom">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Ubilqa.Allsq"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_voine"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_voine_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AncientRome">
+        <activity
+            android:name=".Diciti.OkopStart"
+            android:exported="false" />
+        <activity
+            android:name=".Diciti.Okopelka"
+            android:exported="false" />
+        <activity
+            android:name=".Diciti.GazKooa"
+            android:exported="false" />
+        <activity
+            android:name=".Diciti.Knopkela"
+            android:exported="false"
+            android:label="@string/title_activity_knopkela"
+            android:theme="@style/Theme.AncientRome.NoActionBar" />
+
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6749474043432985~3504676543" />
+
+        <activity
+            android:name=".P2AR8"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AncientRome.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
